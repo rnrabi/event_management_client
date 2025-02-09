@@ -4,6 +4,8 @@ import {
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import DashboardHome from "./pages/dashboard/DashboardHome";
+import AllEvents from "./pages/AllEvents";
 
 
 export const router = createBrowserRouter([
@@ -21,5 +23,15 @@ export const router = createBrowserRouter([
             }
         ]
     },
+    {
+        path: "/dashboard",
+        element: <DashboardHome></DashboardHome>,
+        children: [
+            {
+                path: "allEvents",
+                element: <AllEvents></AllEvents>
+            }
+        ]
+    }
 ]);
 
