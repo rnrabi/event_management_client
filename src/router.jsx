@@ -6,6 +6,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import DashboardHome from "./pages/dashboard/DashboardHome";
 import AllEvents from "./pages/AllEvents";
+import EventCreate from "./pages/dashboard/EventCreate";
 
 
 export const router = createBrowserRouter([
@@ -30,6 +31,10 @@ export const router = createBrowserRouter([
             {
                 path: "allEvents",
                 element: <AllEvents></AllEvents>
+            },
+            {
+                path: "eventCreate",
+                element: <EventCreate></EventCreate>
             }
         ]
     }
